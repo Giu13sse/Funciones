@@ -16,7 +16,7 @@ function calcularDistancia(x1,x2,y1,y2){
     let suma=cuadradoX+coordenadasY;
 		//cuadrado de la suma 
     let resultado=Math.pow(suma,2)
-    //4. obtengo la raiz cuadrada de la suma total
+    // la raiz cuadrada de la funcion
     let distancia=Math.sqrt(resultado);
 
     return(distancia);
