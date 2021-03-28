@@ -1,10 +1,26 @@
-x1=8
-x2=10
-y1=20
-y2=30
-const x= Math.pow((x2-x1),2)
-const y= y2-y1
-var root = Math.pow((x+y),2)
-var distancia1= Math.sqrt(root)
+let FinalX=710;
+let FinalY=-540;
+let InicialX=20;
+let InicialY=30;
 
-console.log("La distancia es " + distancia1)
+
+function calcularDistancia(x1,x2,y1,y2){
+
+    //resta
+    let coordenadasX=x2-x1;
+    let coordenadasY=y2-y1;
+
+    //cuadrado de las x
+    let cuadradoX=Math.pow(coordenadasX,2);
+    //suma del cuadrado x con las y
+    let suma=cuadradoX+coordenadasY;
+		//cuadrado de la suma 
+    let resultado=Math.pow(suma,2)
+    //4. obtengo la raiz cuadrada de la suma total
+    let distancia=Math.sqrt(resultado);
+
+    return(distancia);
+    
+}
+
+console.log('La distancia es ' +calcularDistancia(InicialX,FinalX,InicialY,FinalY));
