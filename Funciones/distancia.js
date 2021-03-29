@@ -24,3 +24,4 @@ function calcularDistancia(x1,x2,y1,y2){
 }
 
 console.log('La distancia es ' +calcularDistancia(InicialX,FinalX,InicialY,FinalY));
+//la funcion usada es la que esta en el taller que el cuadrado es tomado de la resta de las x y cuadrado de la suma del cuadrado de las x mas la resta de las y
